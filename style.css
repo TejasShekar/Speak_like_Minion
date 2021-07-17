@@ -1,12 +1,39 @@
-textarea{
-    height: 10vh;
-    width: 80%;
-    padding: 1rem;
-    margin: 1rem;
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0rem;
 }
-.output{
+.hero{
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    background-color: yellow;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.intro, .trigger{
+    display: block;
+    padding: 1rem;
+}
+#input-txt{
     height: 10vh;
     width: 80%;
     padding: 1rem;
     margin: 1rem;
-    border: 1px solid black;
+    border: 2px solid black;
+}
+#translate-btn{
+    display: block;
+    margin: auto;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 5px solid yellow;
+    background-color: white;
+}
+#output{
+    height: 10vh;
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+}
