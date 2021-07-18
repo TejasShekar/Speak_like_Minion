@@ -2,7 +2,7 @@ var inputTxt = document.querySelector("#input-txt");
 var translateBtn = document.querySelector("#translate-btn");
 var outputTxt = document.querySelector("#output");
 
-// var serverURL = "https://api.funtranslations.com/translate/minion.json";
+var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 function translateURL(input){
     return serverURL+"?"+"text="+input;
