@@ -1,15 +1,19 @@
-var inputTxt = document.querySelector("#input-txt")
-var translateBtn = document.querySelector("#translate-btn")
-var outputTxt = document.querySelector("#output")
+var inputTxt = document.querySelector("#input-txt");
+var translateBtn = document.querySelector("#translate-btn");
+var outputTxt = document.querySelector("#output");
 
-var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+// var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 function translateURL(input){
     return serverURL+"?"+"text="+input;
 }
+function errorHandler(error){
+    console.log("Error occured : ", error);
+    alert("An error has occured. Please try again after sometime");
+}
 function clickEventHandler(){
     // var txtInput = inputTxt.value; 
-    //The above line will grad value from textarea and assign it to a variable 'txtInput'. 
+    //The above line will grab value from textarea and assign it to a variable 'txtInput'. 
 
     fetch(translateURL(inputTxt.value))
     .then(response => response.json())
@@ -17,7 +21,8 @@ function clickEventHandler(){
         var translatedTxt = json.contents.translated;
         outputTxt.innerHTML = translatedTxt;
     })
-
+    .catch(errorHandler)
+}
     // The below gives a explanation of the arrow functions used above
 
     // .then(function responseHandler(response){ return response.json()})
@@ -25,6 +30,5 @@ function clickEventHandler(){
     //     var translatedTxt = json.contents.translated;
     //     outputTxt.innerHTML = translatedTxt;
     // })
-}
 
-translateBtn.addEventListener("click", clickEventHandler)
+translateBtn.addEventListener("click", clickEventHandler);
