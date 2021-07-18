@@ -9,7 +9,7 @@ function translateURL(input){
 }
 function errorHandler(error){
     console.log("Error occured : ", error);
-    alert("An error has occured. Please try again after sometime");
+    alert("An error has occured. Please check whether you are connected to the internet. If yes, try again after sometime.");
 }
 function clickEventHandler(){
     // var txtInput = inputTxt.value; 
