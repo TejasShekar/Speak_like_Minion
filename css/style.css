@@ -8,8 +8,10 @@ body{
     font-weight: bolder;
     text-align: center;
     background-color: yellow;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-bottom: 0.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 .intro, .trigger{
     text-align: center;
