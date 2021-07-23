@@ -1,108 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
-body{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0rem;
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0rem;
 }
-.hero{
-    font-size: 48px;
-    font-weight: bolder;
-    text-align: center;
-    background-color: yellow;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+.hero {
+  font-size: 48px;
+  font-weight: bolder;
+  text-align: center;
+  background-color: yellow;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
-.intro, .trigger{
-    text-align: center;
-    margin: 0rem 0.3rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+.intro,
+.trigger {
+  text-align: center;
+  margin: 0rem 0.3rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
-small{
-    display: block;
-    text-align: center;
-    font-size: 10px;
-    color: grey;
-    padding-bottom: 10px;
+small {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: grey;
+  padding-bottom: 10px;
+  margin: 0rem 1rem;
+}
+#input-txt,
+#output {
+  display: block;
+  clear: both;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  height: 7vh;
+  width: 80%;
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#translate-btn {
+  background-color: yellow;
+  border: 1px solid yellow;
+  margin: 0.7rem;
+  padding: 0.3rem;
+  border-radius: 3rem;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 10px 3px #999;
+}
+
+#translate-btn:active {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 10px 3px #999;
+}
+
+.minion-left {
+  max-width: 120px;
+}
+.minion-right {
+  max-width: 90px;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .intro,
+  .trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
     margin: 0rem 1rem;
-}
-#input-txt, #output{
+  }
+  #translate-btn {
+    background-color: white;
+    padding: 5px;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 0px 0px;
+  }
+  #translate-btn:hover {
+    background-color: yellow;
+    color: black;
+    border-radius: 2rem;
+    padding: 0.5rem;
+  }
+  #input-txt,
+  #output {
     display: block;
     clear: both;
     margin: auto;
-    margin-bottom: 0.5rem;
-    height: 7vh;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    height: 10vh;
     width: 80%;
-    padding: 1rem ;
-    border: 2px solid black;
-}
-
-.flex-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#translate-btn{
-    background-color: yellow;
-    border: 1px solid yellow;
-    margin: 0.7rem;
-    padding: 0.3rem;
-    border-radius: 3rem;
-    font-size: 18px;
-    text-transform: uppercase;
-    box-shadow: 1px 1px 10px 3px #999;
-    }
-
-#translate-btn:active {
-    transform: scale(0.90);
-    box-shadow: 0px 0px 10px 3px #999;
-}
-
-.minion-left{
-    max-width: 120px
-}
-.minion-right{
-    max-width: 90px;
     padding: 1rem;
-}
-
-@media(min-width: 768px){
-    .intro, .trigger{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 18px;
-        margin: 0rem 1rem;
-    }
-    #translate-btn{
-        background-color: white;
-        padding: 5px;
-        color: black;
-        font-size: 20px;
-        text-transform: uppercase;
-        transition-duration: 0.3s;
-        box-shadow: 0px 0px 0px 0px 
-    }
-    #translate-btn:hover{
-        background-color: yellow;
-        color: black;
-        border-radius: 2rem;
-        padding: 0.5rem;
-    }
-    #input-txt, #output{
-        display: block;
-        clear: both;
-        margin: auto;
-        margin-top: 0.2rem;
-        margin-bottom: 0.2rem;
-        height: 10vh;
-        width: 80%;
-        padding: 1rem ;
-        border: 2px solid black;
-    }
-    small{
-        font-size: 13px;
-    }
+    border: 2px solid black;
+  }
+  small {
+    font-size: 13px;
+  }
 }
