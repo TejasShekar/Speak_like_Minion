@@ -1,1 +1,4 @@
-An app to translate simple english conversations to the language minion speaks. Check it out !
+#Banana Translator
+
+An app to translate simple english sentences to the language minion speaks. Check it out !
+
